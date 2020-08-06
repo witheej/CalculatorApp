@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .calculator .row {
+        margin-bottom: 1em;
+    }
+
+    .calculator-btn, .calculator-screen {
+        font-size: 300%;
+        font-family: monospace;
+        width: 100%;
+    }
+
+    div.calculator-screen {
+        background-color: #5ebd5c;
+        border-width: 5px;
+        white-space: nowrap;
+    }
+</style>
+
+<div class="row calculator">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <div class="jumbotron font-weight-bold border border-secondary">
+            <div class="row text-right">
+                <div class="col-12">
+                    <div class="calculator-screen card card-body">0</div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-3"><button class="calculator-btn number-btn btn btn-primary border border-primary">7</button></div>
+                <div class="col-3"><button class="calculator-btn number-btn btn btn-primary border border-primary">8</button></div>
+                <div class="col-3"><button class="calculator-btn number-btn btn btn-primary border border-primary">9</button></div>
+                <div class="col-3"><button class="calculator-btn operator-btn btn btn-primary border border-primary">/</button></div>
+            </div>
+            <div class="row text-center">
+                <div class="col-3"><button class="calculator-btn number-btn btn btn-primary border border-primary">4</button></div>
+                <div class="col-3"><button class="calculator-btn number-btn btn btn-primary border border-primary">5</button></div>
+                <div class="col-3"><button class="calculator-btn number-btn btn btn-primary border border-primary">6</button></div>
+                <div class="col-3"><button class="calculator-btn operator-btn btn btn-primary border border-primary">*</button></div>
+            </div>
+            <div class="row text-center">
+                <div class="col-3"><button class="calculator-btn number-btn btn btn-primary border border-primary">1</button></div>
+                <div class="col-3"><button class="calculator-btn number-btn btn btn-primary border border-primary">2</button></div>
+                <div class="col-3"><button class="calculator-btn number-btn btn btn-primary border border-primary">3</button></div>
+                <div class="col-3"><button class="calculator-btn operator-btn btn btn-primary border border-primary">-</button></div>
+            </div>
+            <div class="row text-center">
+                <div class="col-3"><button class="calculator-btn number-btn btn btn-primary border border-primary">0</button></div>
+                <div class="col-3"><button class="calculator-btn decimal-btn btn btn-primary border border-primary">.</button></div>
+                <div class="col-3"><button class="calculator-btn equals-btn btn btn-primary border border-primary">=</button></div>
+                <div class="col-3"><button class="calculator-btn operator-btn btn btn-primary border border-primary">+</button></div>
+            </div>
+        </div>
+    </div>
+</div>
